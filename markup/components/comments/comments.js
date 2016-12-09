@@ -25,9 +25,7 @@ $(document).ready(function () {
     function goCounterStudent() {
         var $scrollWindow = $(window).scrollTop();
         if(!$activeCountStudents){
-
             if ($scrollWindow > ($countStudentsOffset - 950)) {
-                console.log('Я тут');
                 numAnim.start();
                 $activeCountStudents = true;
             }
