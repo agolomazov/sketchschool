@@ -9,32 +9,32 @@ $(document).ready(function(){
     var $setActiveToPencilBlock = false;
     var $pencilBlock = $('.pencil-block');
     var $wowInit = false;
-    var $windowWidth = $(window).width();
 
-    if($windowWidth > 780 && !$wowInit){
-        wow.init();
-        $wowInit = true;
-    }
+    goWow();
+    drawPencil();
+    $(window).on('scroll', drawPencil);
+    $(window).on('resize', goWow);
 
-
-    $(window).on('resize', function(){
-        var $windowWidth = $(this).width();
-        if($windowWidth > 780 && !$wowInit){
-            wow.init();
-        } else if($windowWidth <= 780 && $wowInit){
-            wow.disabled();
-        }
-    });
-
-    $(window).on('scroll', function () {
-        var $scrollWindow = $(this).scrollTop();
+    function drawPencil(){
+        var $scrollWindow = $(window).scrollTop();
         if(!$setActiveToPencilBlock){
-            if ($scrollWindow >= ($aboutBlockOffset - 200)) {
+            if ($scrollWindow >= ($aboutBlockOffset - 450)) {
                 $pencilBlock.addClass('active');
                 $setActiveToPencilBlock = true;
             }
         }
-    });
+    }
+
+    function goWow() {
+        var $windowWidth = $(window).width();
+        if($windowWidth > 780 && !$wowInit){
+            wow.init();
+            $wowInit = !$wowInit;
+        } else if($windowWidth <= 780 && $wowInit){
+            wow.disabled();
+            $wowInit = !$wowInit;
+        }
+    }
 });
 
 

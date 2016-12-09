@@ -15,7 +15,7 @@
 }
 
 .program-title {
-  font-size: 3.125rem;
+  font-size: 3rem;
   font-weight: 500;
   margin: 0 20px 140px;
   padding: 0;
@@ -136,6 +136,12 @@
   }
 }
 
+@media all and (max-width: 1080px){
+  .program-title {
+    font-size: 2.5rem;
+  }
+}
+
 @media all and (max-width: 980px) {
   .program-wrapper {
     padding: 70px 0;
@@ -152,10 +158,6 @@
 
   .program-item {
     margin: 0 10px 20px;
-  }
-
-  .program-title {
-    font-size: 2.5rem;
   }
 
   .offer-list__item {

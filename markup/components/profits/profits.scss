@@ -1,1 +1,119 @@
+.profit{
+  background: url(%=static=%assets/profits/sketch.png) no-repeat $purple;
+  background-position: 0 60px;
+  min-width: 320px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
 
+.profit-wrapper{
+  max-width: 1190px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 120px 0 50px;
+}
+
+.profit-title{
+  color: $white;
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0 0 100px;
+  position: relative;
+}
+
+.profit-title:after{
+  background-color: $red;
+  content: '';
+  display: block;
+  height: 5px;
+  width: 70px;
+  position: absolute;
+  top: 95px;
+  left: 0;
+}
+
+.profit-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.profit-list__item{
+  margin-bottom: 20px;
+  width: 20%;
+}
+
+.profit-item__image{
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.profit-item__title{
+  color: $white;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.profit-item__description{
+  color: $white;
+  font-size: 1.125rem;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+@media all and (max-width: 1220px){
+  .profit-wrapper{
+    margin: 0 20px;
+  }
+}
+
+@media all and (max-width: 1080px){
+  .profit-title{
+    font-size: 2.5rem;
+  }
+
+  .profit-list{
+    flex-wrap: wrap;
+  }
+
+  .profit-list__item{
+    width: 40%;
+  }
+}
+
+@media all and (max-width: 720px){
+  .profit-title:after{
+    top: 70px;
+  }
+  
+  .profit-wrapper{
+    padding: 70px 0 50px;
+  }
+
+  .profit-title{
+    font-size: 1.5rem;
+  }
+
+  .profit-item__title,
+  .profit-item__description{
+    font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 520px){
+  .profit-list{
+    justify-content: center;
+  }
+
+  .profit-list__item{
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .profit-title:after {
+    top: 50px;
+  }
+}
