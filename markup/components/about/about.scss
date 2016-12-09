@@ -1,1 +1,104 @@
+.about{
+  background-color: $white;
+  border-bottom: 1px solid $light-gray;
+  position: relative;
+  min-width: 320px;
+  width: 100%;
+}
 
+.about-wrapper{
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-width: 1190px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 140px 0 140px;
+  position: relative;
+  width: 100%;
+}
+
+.about-left-content{
+  width: 40%;
+}
+
+
+.about-right-content{
+  width: 60%;
+}
+
+.about-left-content__title{
+  font-size: 3.125rem;
+  font-weight: 500;
+  margin-bottom: 90px;
+  position: relative;
+}
+
+.about-left-content__title:after{
+  background-color: $red;
+  content: '';
+  display: block;
+  height: 5px;
+  width: 70px;
+  position: absolute;
+  top: 95px;
+  left: 0;
+}
+
+.about-left-content__description{
+  font-size: 1.375rem;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.about-right-content__img{
+  margin-left: 150px;
+}
+
+.pencil-block{
+  background: url(%=static=%assets/about/pencil.png) no-repeat #ffffff;
+  background-position: center bottom;
+  position: absolute;
+  top: 0;
+  left: 41.1%;
+  height: 561px;
+  width: 172px;
+}
+
+.pencil-block.active{
+  -webkit-animation-name: drawLine;
+  -moz-animation-name: drawLine;
+  -o-animation-name: drawLine;
+  animation-name: drawLine;
+
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes drawLine {
+  0%{
+    height: 561px;
+  }
+
+  100%{
+    height: 861px;
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "awesome_project",
+  "description": "Your awesome project description",
+  "main": "gulpfile.js",
+  "authors": [
+    "Антон Голомазов <golomazov-tosha2012@yandex.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/agolomazov/sketchschool",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
