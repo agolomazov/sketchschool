@@ -22,3 +22,11 @@ html, body {
 .page__buffer {
     height: 50px;
 }
+
+.rub{
+    background: url(%=static=%assets/program/rub.svg) no-repeat;
+    display: inline-block;
+    height: 35px;
+    margin: 0;
+    width: 25px;
+}

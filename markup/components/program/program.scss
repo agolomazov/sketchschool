@@ -1,1 +1,135 @@
+.program{
+  background: url(%=static=%assets/program/sketch-2.jpg) no-repeat, url(%=static=%assets/program/sketch-3.jpg) no-repeat;
+  background-position: 100% 50px, 0 300px;
+  position: relative;
+  max-width: 100%;
+  min-width: 320px;
+}
 
+.program-wrapper{
+  max-width: 1190px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 130px 0;
+  position: relative;
+}
+
+.program-title{
+  font-size: 3.125rem;
+  font-weight: 500;
+  margin: 0 20px 140px;
+  padding: 0;
+  text-align: center;
+}
+
+.program-title:after{
+  background-color: $red;
+  content: '';
+  display: block;
+  height: 5px;
+  width: 70px;
+  position: absolute;
+  top: 225px;
+  left: 46%;
+}
+
+.program-content-wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+.program-item {
+
+  box-shadow: 0px 0px 11.44px 1.56px rgba(122, 122, 122, 0.84);
+  box-sizing: border-box;
+  max-width: 370px;
+  min-width: 280px;
+  margin: 0 20px 20px;
+  width: 100%;
+}
+
+.program-item__wrapper{
+  padding: 70px 30px;
+}
+
+.entry-level{
+  background: url(%=static=%assets/program/plan-1-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.basic-level{
+  background: url(%=static=%assets/program/plan-2-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.professional-level{
+  background: url(%=static=%assets/program/plan-3-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.program-item__title{
+  color: $white;
+  font-size: 1.875rem;
+  font-weight: 300;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.program-item__price{
+  color: $white;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 85px;
+  text-align: center;
+}
+
+.program-item__offer{
+  margin-bottom: 95px;
+}
+
+.program-item__offer-list{
+  color: $white;
+  font-size: 1.315rem;
+  list-style: none;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.offer-list__item{
+  margin-bottom: 25px;
+}
+
+.program-item__get{
+  text-align: center;
+}
+
+.btn-white{
+  background: transparent;
+  border: 3px solid $white;
+  border-radius: 3px;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 12px 25px;
+  font-size: 1.125rem;
+  font-weight: 300;
+
+  -webkit-transition: all .35s ease;
+  -moz-transition: all .35s ease;
+  -o-transition: all .35s ease;
+  transition: all .35s ease;
+
+  &:hover{
+    background: $white;
+    color: $purple;
+  }
+}
