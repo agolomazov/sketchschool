@@ -13,6 +13,7 @@ $(document).ready(function(){
 
     if($windowWidth > 780 && !$wowInit){
         wow.init();
+        $wowInit = true;
     }
 
 

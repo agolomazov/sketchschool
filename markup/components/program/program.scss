@@ -1,4 +1,4 @@
-.program{
+.program {
   background: url(%=static=%assets/program/sketch-2.jpg) no-repeat, url(%=static=%assets/program/sketch-3.jpg) no-repeat;
   background-position: 100% 50px, 0 300px;
   position: relative;
@@ -6,7 +6,7 @@
   min-width: 320px;
 }
 
-.program-wrapper{
+.program-wrapper {
   max-width: 1190px;
   min-width: 320px;
   margin: 0 auto;
@@ -14,7 +14,7 @@
   position: relative;
 }
 
-.program-title{
+.program-title {
   font-size: 3.125rem;
   font-weight: 500;
   margin: 0 20px 140px;
@@ -22,7 +22,7 @@
   text-align: center;
 }
 
-.program-title:after{
+.program-title:after {
   background-color: $red;
   content: '';
   display: block;
@@ -33,7 +33,7 @@
   left: 46%;
 }
 
-.program-content-wrapper{
+.program-content-wrapper {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -43,7 +43,6 @@
 }
 
 .program-item {
-
   box-shadow: 0px 0px 11.44px 1.56px rgba(122, 122, 122, 0.84);
   box-sizing: border-box;
   max-width: 370px;
@@ -52,29 +51,29 @@
   width: 100%;
 }
 
-.program-item__wrapper{
+.program-item__wrapper {
   padding: 70px 30px;
 }
 
-.entry-level{
+.entry-level {
   background: url(%=static=%assets/program/plan-1-bg.jpg) no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
 }
 
-.basic-level{
+.basic-level {
   background: url(%=static=%assets/program/plan-2-bg.jpg) no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
 }
 
-.professional-level{
+.professional-level {
   background: url(%=static=%assets/program/plan-3-bg.jpg) no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
 }
 
-.program-item__title{
+.program-item__title {
   color: $white;
   font-size: 1.875rem;
   font-weight: 300;
@@ -82,7 +81,7 @@
   text-align: center;
 }
 
-.program-item__price{
+.program-item__price {
   color: $white;
   font-size: 3rem;
   font-weight: 500;
@@ -90,11 +89,11 @@
   text-align: center;
 }
 
-.program-item__offer{
+.program-item__offer {
   margin-bottom: 95px;
 }
 
-.program-item__offer-list{
+.program-item__offer-list {
   color: $white;
   font-size: 1.315rem;
   list-style: none;
@@ -104,15 +103,15 @@
   padding: 0;
 }
 
-.offer-list__item{
+.offer-list__item {
   margin-bottom: 25px;
 }
 
-.program-item__get{
+.program-item__get {
   text-align: center;
 }
 
-.btn-white{
+.btn-white {
   background: transparent;
   border: 3px solid $white;
   border-radius: 3px;
@@ -128,8 +127,93 @@
   -o-transition: all .35s ease;
   transition: all .35s ease;
 
-  &:hover{
+  &:hover {
     background: $white;
     color: $purple;
+  }
+}
+
+@media all and (max-width: 980px) {
+  .program-wrapper {
+    padding: 70px 0;
+  }
+
+  .program-title:after {
+    top: 170px;
+  }
+
+  .program-content-wrapper {
+    width: 95%;
+    margin: 0 20px;
+  }
+
+  .program-item {
+    margin: 0 10px 20px;
+  }
+
+  .program-title {
+    font-size: 2.5rem;
+  }
+
+  .offer-list__item {
+    font-size: 1.15rem;
+  }
+}
+
+@media all and (max-width: 920px) {
+
+  .program-content-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .program-item {
+    width: 40%;
+  }
+
+  .program-item__price, .program-item__title {
+    margin-bottom: 50px;
+  }
+}
+
+@media all and (max-width: 720px) {
+  .program-wrapper {
+    padding: 30px 0;
+  }
+
+  .program-title {
+    font-size: 1.5rem;
+    margin-bottom: 70px;
+  }
+
+  .program-title:after {
+    top: 80px;
+  }
+
+  .program-item__title{
+    font-size: 1.5rem;
+  }
+
+  .program-item__price, .program-item__title{
+    margin-bottom: 30px;
+  }
+
+  .program-item__price{
+    font-size: 2rem;
+  }
+
+  .rub{
+    height: 25px;
+  }
+
+  .offer-list__item{
+    margin-bottom: 10px;
+  }
+
+  .program-item {
+    width: 50%;
+  }
+
+  .program-item__wrapper {
+    padding: 40px 30px;
   }
 }
