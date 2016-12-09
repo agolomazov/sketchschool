@@ -55,3 +55,37 @@
   font-size: 1.125rem;
   font-weight: 500;
 }
+
+.slick-slide:focus{
+  outline: none;
+}
+
+.list-comments__dots{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 20px;
+  right: -70px;
+}
+
+.list-comment__item{
+  cursor: pointer;
+}
+
+.list-comments__dots li{
+  list-style: none;
+  background: url(%=static=%assets/comments/dot.png) no-repeat;
+  background-position: center center;
+}
+
+.list-comments__dots li.slick-active{
+  list-style: none;
+  background: url(%=static=%assets/comments/current-dot.png) no-repeat;
+  background-position: center center;
+}
+
+.list-comments__dots button{
+  opacity: 0;
+  width: .01rem;
+  height: .01rem;
+}

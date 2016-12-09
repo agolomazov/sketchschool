@@ -1,6 +1,4 @@
 /*eslint-disable*/
-
-
 $(document).ready(function(){
     var wow = new WOW();
 
