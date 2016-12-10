@@ -12,15 +12,16 @@
   display: block;
   height: 1px;
   background-color: $red;
-  top: -20px;
-  left: -474px;
+  bottom: 60px;
+  left: 0;
+  transform-origin: left center;
 
   width: 3020px;
-  -ms-transform: rotate(315deg);
-  -webkit-transform: rotate(315deg);
-  -o-transform: rotate(315deg);
-  -moz-transform: rotate(315deg);
-  transform: rotate(315deg);
+  -ms-transform: rotate(325deg);
+  -webkit-transform: rotate(325deg);
+  -o-transform: rotate(325deg);
+  -moz-transform: rotate(325deg);
+  transform: rotate(325deg);
   z-index: 5;
 }
 
@@ -36,7 +37,7 @@
   align-items: center;
   margin: 0 20px;
   flex-wrap: nowrap;
-  padding: 80px 0 90px;
+  padding: 80px 0 30px;
 }
 
 .header-wrapper .top .logo{
@@ -172,11 +173,22 @@
   }
 }
 
+.header .right-part{
+  background-color: $purple;
+  position: relative;
+}
+
 .header-face__img{
   position: relative;
   max-width: 567px;
   top: 5px;
   width: 100%;
+}
+
+@media all and (max-width: 1480px){
+  .header:after{
+    bottom: 170px;
+  }
 }
 
 @media all and (max-width: 1280px){
@@ -185,12 +197,7 @@
   }
 
   .header:after{
-    left: -685px;
-    -webkit-transform: rotate(320deg);
-    -moz-transform: rotate(320deg);
-    -ms-transform: rotate(320deg);
-    -o-transform: rotate(320deg);
-    transform: rotate(320deg);
+    bottom: 250px;
   }
 }
 

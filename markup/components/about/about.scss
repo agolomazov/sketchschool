@@ -58,16 +58,36 @@
 }
 
 .pencil-block{
-  background: url(%=static=%assets/about/pencil.png) no-repeat #ffffff;
-  background-position: center bottom;
   position: absolute;
   top: 0;
   left: 41.1%;
-  height: 561px;
-  width: 172px;
+  width: 120px;
+  height: 800px;
 }
 
-.pencil-block.active{
+.pencil{
+  background: url(%=static=%assets/about/pencil.png) no-repeat rgba(255, 255, 255, .2);
+  background-position: center bottom;
+  position: absolute;
+  height: 561px;
+  width: 172px;
+  z-index: 20;
+}
+
+.pencil-block:after{
+  content: '';
+  display: block;
+  width: 172px;
+  height: 300px;
+  background-color: $white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.pencil.active{
+  z-index: 100;
   -webkit-animation-name: drawLine;
   -moz-animation-name: drawLine;
   -o-animation-name: drawLine;

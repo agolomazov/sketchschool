@@ -138,6 +138,16 @@
   }
 }
 
+@media all and (max-width: 1280px){
+  .comments:after{
+    -webkit-transform: rotate(310deg);
+    -moz-transform: rotate(310deg);
+    -ms-transform: rotate(310deg);
+    -o-transform: rotate(310deg);
+    transform: rotate(310deg);
+  }
+}
+
 @media all and (max-width: 1220px) {
   .comments-wrapper .right-part {
     position: relative;

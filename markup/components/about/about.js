@@ -5,7 +5,7 @@ $(document).ready(function(){
     var $aboutBlock = $('.about');
     var $aboutBlockOffset = $aboutBlock.length ? $aboutBlock.offset().top : 0;
     var $setActiveToPencilBlock = false;
-    var $pencilBlock = $('.pencil-block');
+    var $pencilBlock = $('.pencil');
     var $wowInit = false;
 
     goWow();
