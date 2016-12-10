@@ -1,11 +1,24 @@
 .footer{
-  background: url(%=static=%assets/footer/footer-face.jpg) no-repeat $purple;
+  background: $purple;
   background-attachment: fixed;
-  background-position: right 0;
+  background-position: right 300px;
   position: relative;
   min-width: 320px;
   width: 100%;
   overflow: hidden;
+}
+
+.footer:after{
+  content: '';
+  display: block;
+  position: fixed;
+  background: url(%=static=%assets/footer/footer-face.jpg) no-repeat;
+  width: 743px;
+  height: 660px;
+  right: 0;
+  bottom: 0;
+  will-change: transform; // creates a new paint layer
+  z-index: 1;
 }
 
 .footer-wrapper{
@@ -13,6 +26,8 @@
   max-width: 1190px;
   min-width: 320px;
   padding: 60px 0 30px;
+  position: relative;
+  z-index: 200;
 }
 
 .footer-logo{

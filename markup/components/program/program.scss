@@ -1,9 +1,10 @@
 .program {
-  background: url(%=static=%assets/program/sketch-2.jpg) no-repeat, url(%=static=%assets/program/sketch-3.jpg) no-repeat;
+  background: url(%=static=%assets/program/sketch-2.jpg) no-repeat, url(%=static=%assets/program/sketch-3.jpg) no-repeat, $white;
   background-position: 100% 50px, 0 300px;
   position: relative;
   max-width: 100%;
   min-width: 320px;
+  z-index: 10;
 }
 
 .program-wrapper {
