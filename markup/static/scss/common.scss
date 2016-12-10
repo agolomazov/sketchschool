@@ -24,8 +24,14 @@ html, body {
 }
 
 .message-page{
-    overflow: hidden;
+
     background-color: $messages-bg;
+}
+
+.message-wrapper{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 .rub{

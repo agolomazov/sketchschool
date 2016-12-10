@@ -1,0 +1,38 @@
+.footer-message{
+  position: relative;
+  min-width: 320px;
+  width: 100%;
+  position: relative;
+}
+
+.footer-message__wrapper{
+  max-width: 1190px;
+  min-width: 280px;
+  margin: 0 auto;
+}
+
+.footer-message .copyright{
+  color: $purple;
+  font-size: .875rem;
+  font-weight: 300;
+
+  & .copyrights-row{
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  & .copyright-link{
+    color: $purple;
+    text-decoration: underline;
+    
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+@media all and (max-width: 1220px){
+  .footer-message__wrapper{
+    margin: 0 20px;
+  }
+}
