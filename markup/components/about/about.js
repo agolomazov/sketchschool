@@ -3,7 +3,7 @@ $(document).ready(function(){
     var wow = new WOW();
 
     var $aboutBlock = $('.about');
-    var $aboutBlockOffset = $aboutBlock.lenfth ? $aboutBlock.offset().top : 0;
+    var $aboutBlockOffset = $aboutBlock.length ? $aboutBlock.offset().top : 0;
     var $setActiveToPencilBlock = false;
     var $pencilBlock = $('.pencil-block');
     var $wowInit = false;

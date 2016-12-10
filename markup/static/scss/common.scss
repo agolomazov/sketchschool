@@ -24,7 +24,8 @@ html, body {
 }
 
 .message-page{
-    background-color: #e7e7ef;
+    overflow: hidden;
+    background-color: $messages-bg;
 }
 
 .rub{
