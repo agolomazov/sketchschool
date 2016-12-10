@@ -19,17 +19,21 @@ $(document).ready(function(){
         cursor: '|'
     };
 
-    superplaceholder({
-        el: modalNameInput,
-        sentences: ['Введите Ваше имя', 'Например: Дональд Трамп'],
-        options: superPlaceholderOptions
-    });
+    if(modalNameInput){
+        superplaceholder({
+            el: modalNameInput,
+            sentences: ['Введите Ваше имя', 'Например: Дональд Трамп'],
+            options: superPlaceholderOptions
+        });
+    }
 
-    superplaceholder({
-        el: modalNameInput2,
-        sentences: ['Введите Ваше имя', 'Например: Дональд Трамп'],
-        options: superPlaceholderOptions
-    });
+    if(modalNameInput2) {
+        superplaceholder({
+            el: modalNameInput2,
+            sentences: ['Введите Ваше имя', 'Например: Дональд Трамп'],
+            options: superPlaceholderOptions
+        });
+    }
 
     $('.phone-js').inputmask("+7(999)999-99-99");
     $('.email-js').inputmask({

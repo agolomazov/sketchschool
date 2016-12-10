@@ -12,12 +12,12 @@ $(document).ready(function () {
     $slickSlider.slick($sliderOptions);
 
     var $countStudents = $('#js-students');
-    var $endCount = parseInt($countStudents.data('end-count'));
+    var $endCount = $countStudents.length ? parseInt($countStudents.data('end-count')): 0;
 
 
-    var $countStudentsOffset = $countStudents ? $countStudents.offset().top : 0;
+    var $countStudentsOffset = $countStudents.length ? $countStudents.offset().top : 0;
     var $activeCountStudents = false;
-    var numAnim = new CountUp("js-students", 0, $endCount, 0, 5);
+    var numAnim = $countStudents.length ? new CountUp("js-students", 0, $endCount, 0, 5) : null;
 
 
     goCounterStudent();
@@ -26,8 +26,10 @@ $(document).ready(function () {
         var $scrollWindow = $(window).scrollTop();
         if(!$activeCountStudents){
             if ($scrollWindow > ($countStudentsOffset - 950)) {
-                numAnim.start();
-                $activeCountStudents = true;
+                if($endCount !== 0){
+                    numAnim.start();
+                    $activeCountStudents = true;
+                }
             }
         }
 
