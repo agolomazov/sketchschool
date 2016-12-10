@@ -165,3 +165,9 @@
       text-align: center;
     }
 }
+
+@media all and (max-width: 480px){
+  .footer:after{
+    display: none;
+  }
+}
