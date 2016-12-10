@@ -192,6 +192,10 @@
 }
 
 @media all and (max-width: 780px){
+  .about-left-content__title:after{
+    top: 75px;
+  }
+
     .about-right-content{
       display: none;
     }
@@ -209,13 +213,15 @@
 @media all and (max-width: 720px){
   .about-left-content__title{
     font-size: 1.5rem;
+    text-align: center;
+    margin:0 0 30px;
   }
 
-  .about-left-content__title{
-    margin: 0 0 50px;
+  .about{
+    border-bottom: none;
   }
 
   .about-left-content__title:after{
-    top: 50px;
+    display: none;
   }
 }

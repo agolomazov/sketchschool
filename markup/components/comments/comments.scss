@@ -70,7 +70,7 @@
 
 .list-comments__container {
   list-style: none;
-  margin: 0;
+  margin: 10px 0 0;
   padding: 0;
   position: relative;
 }
@@ -78,7 +78,7 @@
 .comment-text {
   font-size: 1.125rem;
   font-weight: 300;
-  margin-bottom: 45px;
+  margin: 0 0 45px;
 }
 
 .comment-author {
@@ -178,9 +178,68 @@
     width: 100%;
     margin-bottom: 30px;
     text-align: center;
+    margin-right: 0;
   }
 
   .comments-wrapper .right-part {
-    width: 100%;
+    width: 90%;
+  }
+
+  .list-comments__dots {
+    right: -30px;
+    top: 10px;
+  }
+}
+
+@media all and (max-width: 720px){
+  .comments-wrapper .left-part{
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+  .list-comments__dots {
+    right: -20px;
+    top: 25px;
+  }
+
+  .comments-wrapper{
+    padding: 30px 40px;
+  }
+}
+
+@media all and (max-width: 620px){
+  .comments-wrapper .left-part{
+    font-size: 1.75rem;
+  }
+
+  .comments-wrapper {
+    padding: 20px 30px;
+  }
+}
+
+@media all and (max-width: 520px){
+  .comments-wrapper .left-part{
+    font-size: 1.5rem;
+  }
+
+  .comment-text {
+    font-size: 1.05rem;
+  }
+}
+
+@media all and (max-width: 480px){
+
+  .list-comments__dots {
+    top: 30px;
+  }
+}
+
+@media all and (max-width: 420px){
+    .comments .right-part{
+      padding: 0;
+    }
+
+  .comments-wrapper {
+    padding: 20px 20px 0;
   }
 }

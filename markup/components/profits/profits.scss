@@ -87,7 +87,7 @@
 
 @media all and (max-width: 720px){
   .profit-title:after{
-    top: 70px;
+    display: none;
   }
   
   .profit-wrapper{
@@ -96,6 +96,8 @@
 
   .profit-title{
     font-size: 1.5rem;
+    text-align: center;
+    margin: 0 0 30px;
   }
 
   .profit-item__title,
@@ -116,5 +118,20 @@
 
   .profit-title:after {
     top: 50px;
+  }
+}
+
+@media all and (max-width: 420px){
+  .profit-image {
+    max-width: 100px;
+  }
+
+  .profit-item__title,
+  .profit-item__description{
+    text-align: center;
+  }
+
+  .profit-title {
+    margin: 0 0 65px;
   }
 }
