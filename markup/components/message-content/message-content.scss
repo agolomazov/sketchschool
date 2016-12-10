@@ -75,3 +75,50 @@
     margin: 0 20px;
   }
 }
+
+@media all and (max-width: 1080px){
+  .message-content .left-part{
+    width: 60%;
+  }
+  .message-content .right-part{
+    width: 40%;
+  }
+
+  .podpis-img{
+    max-width: 100%;
+  }
+}
+
+@media all and (max-width: 980px){
+  .message-content:after{
+    -webkit-transform: rotate(-53deg);
+    -moz-transform: rotate(-53deg);
+    -ms-transform: rotate(-53deg);
+    -o-transform: rotate(-53deg);
+    transform: rotate(-53deg);
+  }
+}
+
+@media all and (max-width: 920px){
+  .message-content .left-part{
+    width: 100%;
+  }
+
+  .message-content .right-part{
+    display: none;
+  }
+
+  .message-content:after{
+    display: none;
+  }
+
+  .message-content .left-part .left-part-wrapper{
+    padding: 0;
+  }
+}
+
+@media all and (max-width: 480px){
+  .text-row{
+    display: inline;
+  }
+}
