@@ -3,7 +3,7 @@
   background-attachment: fixed;
   background-position: right 300px;
   position: relative;
-  min-width: 320px;
+  min-width: 340px;
   width: 100%;
   overflow: hidden;
 }
@@ -24,7 +24,7 @@
 .footer-wrapper{
   margin: 0 auto;
   max-width: 1190px;
-  min-width: 320px;
+  min-width: 300px;
   padding: 60px 0 30px;
   position: relative;
   z-index: 200;
@@ -153,6 +153,10 @@
 
   .btn-red{
     font-size: 1.15rem;
+  }
+  
+  .footer-wrapper{
+    margin: 0 20px;
   }
 }
 

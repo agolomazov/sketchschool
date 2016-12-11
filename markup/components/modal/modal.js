@@ -53,11 +53,17 @@ $(document).ready(function(){
     });
 
     $(document).on('click', '.call-js', function (e) {
-        e.preventDefault();
+        var $scrollTopWin = $(window).scrollTop();
+        var $windowWidth = $(window).width();
+        var $modalWidth = $('#call-phone-js').width();
+        var coords = [ ($windowWidth / 2) - ($modalWidth / 2), $scrollTopWin + 80  ]
         $('#call-phone-js').bPopup({
             closeClass: 'modal-close',
-            modalColor: 'black'
+            modalColor: 'black',
+            position: coords
         });
     });
+
+
 });
 /*eslint-enable*/
